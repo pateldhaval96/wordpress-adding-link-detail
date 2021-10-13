@@ -1,0 +1,469 @@
+
+quetion) how to give img in photoshop psd  :---
+
+1) image par arrow lae java nu ne right-side ma layer ma shodhvanu image layer.
+2) image layer par double click kari ne new file ma javanu photoshop ma.
+3) image ne trim mate photoshop ma top par image par click kari ne trim ma javanu.
+4) photoshop ma image save karva mate ctrl,alt,shift,s aek sathe click karine save karvanu
+
+
+
+
+
+
+
+
+
+quetion) how to know google page speed in html :---
+solutuon: follow link : https://developers.google.com/speed/pagespeed/insights/
+dekstop:75% +
+mobile:50% +
+
+
+github link : https://github.com/dhaval1396/AOS-Animation
+
+github link :github.com/pateldhaval96
+
+quetion) Autoprefixer CSS online :---
+solutuon: follow link : https://autoprefixer.github.io/
+
+quetion) how to add animation in image html  :---
+solutuon: 
+<style type="text/css">
+  	header {
+  		position:relative;
+  	}
+  	header:before {
+  	font-family: fontawesome;
+    content: "";
+    background-image: url(image/headerimg.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 30px;
+    bottom: -30px;
+    /* header img animation css*/
+    animation: animatedBackground 40s linear infinite;
+
+    -ms-animation: animatedBackground 40s linear infinite;
+
+    -moz-animation: animatedBackground 40s linear infinite;
+
+    -webkit-animation: animatedBackground 40s linear infinite;
+  	}
+  	 /* header img animation kyfile css*/
+  	@keyframes animatedBackground {
+
+    from {
+
+        background-position: 0 0;
+
+    }
+
+    to {
+
+        background-position: 100% 0;
+
+    }
+
+}
+
+@-webkit-keyframes animatedBackground {
+
+    from {
+
+        background-position: 0 0;
+
+    }
+
+    to {
+
+        background-position: 100% 0;
+
+    }
+
+}
+
+@-o-keyframes animatedBackground {
+
+    from {
+
+        background-position: 0 0;
+
+    }
+
+    to {
+
+        background-position: 100% 0;
+
+    }
+
+}
+
+@-moz-keyframes animatedBackground {
+
+    from {
+
+        background-position: 0 0;
+
+    }
+
+    to {
+
+        background-position: 100% 0;
+
+    }
+
+}
+
+  </style>
+
+
+
+12)how to install wordpress in cpanel:
+
+solution:-- fallow video  https://www.youtube.com/watch?v=LIhNlzLgF78&t=373s
+
+
+12)how to install custom theme in wordpress:
+
+solution:-- go to follow link https://underscores.me/ and download custom theme and upload it in apperence ni under theme ma upload.
+
+
+
+
+
+1) how to add bootstrap link in wordpress:--
+
+
+Solution:--
+
+
+// adding bootstrap
+
+
+
+function enqueue_load_bootstrap() {
+  
+ 
+ // Add bootstrap CSS
+   
+ wp_register_style( 'bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', false, NULL, 'all' );
+   
+ wp_enqueue_style( 'bootstrap-css' );
+
+ 
+   
+// Add popper js
+    
+wp_register_script( 'popper-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', ['jquery'], NULL, true );
+   
+ wp_enqueue_script( 'popper-js' );
+
+ 
+   
+// Add bootstrap js
+   
+ wp_register_script( 'bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', ['jquery'], NULL, true );
+   
+ wp_enqueue_script( 'bootstrap-js' );
+
+}
+
+
+
+// Add integrity and cross origin attributes to the bootstrap css.
+
+
+function add_bootstrap_css_attributes( $html, $handle ) {
+    
+if ( $handle === 'bootstrap-css' ) {
+        
+return str_replace( '/>', 'integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />', $html );
+    
+}
+    
+return $html;
+
+}
+
+add_filter( 'style_loader_tag', 'add_bootstrap_css_attributes', 10, 2 );
+
+
+
+
+// Add integrity and cross origin attributes to the bootstrap script.
+
+function add_bootstrap_script_attributes( $html, $handle ) 
+{
+    if ( $handle === 'bootstrap-js' ) {
+        
+return str_replace( '></script>', ' integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>', $html );
+   
+ }
+   
+ return $html;
+
+}
+
+add_filter('script_loader_tag', 'add_bootstrap_script_attributes', 10, 2);
+
+
+
+// Add integrity and cross origin attributes to the popper script.
+
+
+function add_popper_script_attributes( $html, $handle ) {
+    
+if ( $handle === 'popper-js' ) {
+       
+ return str_replace( '></script>', ' integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>', $html );
+  
+  }
+   
+ return $html;
+
+}
+
+add_filter('script_loader_tag', 'add_popper_script_attributes', 10, 2);
+
+add_action( 'wp_enqueue_scripts', 'enqueue_load_bootstrap' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+offline:=================
+
+
+
+**************================================*******************************
+
+
+7)how to add lightbox gallery in wordpress :
+
+solution:-- visual composer ma Image Gallery install .
+
+
+
+**************================================*******************************
+
+
+8)how to add search bar in wordpress :
+solution:-- visual composer ma Simple Search install .
+
+
+**************================================*******************************
+
+
+
+
+
+**************================================*******************************
+
+11)how to add header in wordpress :
+
+solution 1):-- visual composer ma basic menu install and mobile , ipad ma sandwich me active karvanu.
+
+solution 2):-- visual composer ma max mega menu install karvanu and max-mega-menu ni source code [maxmegamenu location=menu-1]  mukvanu.
+
+max-mega-me source code step:-- 
+step 1 :- open max mega menu
+step 2:- find menu location left side.
+step 3: go to display option and fing source code
+
+
+
+**************================================*******************************
+
+
+
+
+
+
+**************================================*******************************
+
+13) how to create inquiry form in wordpress:---
+
+solution:-- plugins ma contact form 7 install karvu and follow code:
+
+<div class="inquiry-main-div">
+  <div class="row">
+   <div class="col-md-6">
+      <label> 
+    [text* Company Name placeholder "Company Name"] </label>
+   </div>
+    <div class="col-md-6">
+      <label> 
+    [text* Contact Person Name placeholder "Contact Person Name"] </label>
+   </div>
+ <div class="col-md-6">
+      <label> 
+    [text* Email ID placeholder "Email ID"] </label>
+   </div>
+    <div class="col-md-6">
+      <label> 
+    [text* Phone Number placeholder "Phone Number"] </label>
+   </div>
+   <div class="col-md-12">
+      <label> 
+    [textarea* Address placeholder "Address"] </label>
+   </div>
+  <div class="col-md-12">
+      <label> 
+    [textarea* Message placeholder "Message"] </label>
+   </div>
+  <div class="col-md-12">
+   <div class="common-btn-div mt-2">
+       <a class="btn" href="#">know more</a>
+     </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+**************================================*******************************
+
+13) how to reversr section in mobile view in wordpress:---
+
+solution:--
+
+
+.row-reverse-div .vce-row-content {
+	flex-direction:column-reverse!important;
+}
+
+
+
+
+
+**************================================*******************************
+
+14) how to craete section in visual composer :---
+
+solution:----
+
+
+step 1 ) create  row and apply class="common-padding-div about-main-div".
+
+step 2 ) create row and apply class ="custom-container" and dreppen-drop in about-main-div.
+
+step 3 : create row and dreppen-drop in custom-container.
+
+
+
+
+
+
+
+
+**************================================*******************************
+
+15) function.php code offline add css , bootstrap and jquery :---
+
+solution:
+
+function custom_scripts() {
+
+       //how to add bootstrap , css offline in wordpress:--
+
+	wp_enqueue_style( 'custom-style', get_stylesheet_uri() );
+	
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
+	
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css');
+
+	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/css/slick-slider.css');
+
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
+
+      
+        //how to add fontawesome cdn link offline in wordpress:--
+
+	wp_enqueue_style( 'load-fa', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+
+
+       //how to add font-family offline in wordpress:--
+
+	wp_enqueue_style( 'poppins_fonts', 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap' );
+
+	wp_enqueue_style( 'quicksand_fonts', 'https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap' );
+
+
+
+       //how to add bootstrapjs , jquery offline in wordpress:--
+		
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/jquery.js', array() );
+	
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array() );
+
+	wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/js/slick-slider.js', array() );
+
+	wp_enqueue_script( 'elfsight-app', 'https://apps.elfsight.com/p/platform.js', array() );
+
+  	wp_enqueue_script( 'laungage-translate', '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit', array() );
+	
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+
+
+
+}
+
+add_action( 'wp_enqueue_scripts', 'custom_scripts' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================= resign word =============================
+
+
+
+Dear Mr Bharat:
+
+I would like to inform you that I am resigning from my position as Web Designer, effective Aug 9, 2021.
+
+Thank you very much for the opportunities for professional and personal development that you have provided me during the last one year.
+If I can be of any help during this transition, please let me know.
+
+Sincerely,
+Dhaval Patel
+Web designer
+
+
+
+
+
+
+
+
+
+
+
